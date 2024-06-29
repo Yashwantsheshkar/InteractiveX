@@ -8,35 +8,50 @@
 import SwiftUI
 
 struct UpdateList: View {
+    @ObservedObject var store = UpdateStore()
+    
+    func addUpdate(){
+        store.updates.append(Update(image: "Card1", title: "", text: "text", date: "jan 1"))
+    }
+    
     var body: some View {
         NavigationView(content: {
-            List(updateData) { update in
-                NavigationLink(destination: Text(update.text)) {
-                    HStack {
-                        Image(update.image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 80, height: 80)
-                            .background(Color(.black))
-                            .cornerRadius(20)
-                            .padding(.trailing,4)
-                        VStack(alignment: .leading, spacing: 8.0) {
-                            Text(update.title)
-                                .font(.system(size: 20, weight: .bold))
-                            Text(update.text)
-                                .lineLimit(2)
-                                .font(.subheadline)
-                                .foregroundColor(Color.gray)
-                            Text(update.date)
-                                .font(.caption)
-                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                .foregroundStyle(.secondary)
+            List{
+                ForEach(store.updates) { update in
+                    NavigationLink(destination: UpdateDetail(update: update)) {
+                        HStack {
+                            Image(update.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 80, height: 80)
+                                .background(Color(.black))
+                                .cornerRadius(20)
+                                .padding(.trailing,4)
+                            VStack(alignment: .leading, spacing: 8.0) {
+                                Text(update.title)
+                                    .font(.system(size: 20, weight: .bold))
+                                Text(update.text)
+                                    .lineLimit(2)
+                                    .font(.subheadline)
+                                    .foregroundColor(Color.gray)
+                                Text(update.date)
+                                    .font(.caption)
+                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                    .foregroundStyle(.secondary)
+                            }
                         }
+                        .padding(.vertical, 8)
+                       
+                        
                     }
-                    .padding(.vertical, 8)
                     
+                        
+              
+                    
+                    .navigationBarTitle(Text("Updates"))
+                  
                 }
-                .navigationBarTitle("Updates")
+                
             }
         })
     }

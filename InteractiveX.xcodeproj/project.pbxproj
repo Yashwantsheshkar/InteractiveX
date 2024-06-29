@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6E30360D2C307CEE00801E59 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E30360C2C307CEE00801E59 /* UpdateList.swift */; };
+		6E30360F2C3083E100801E59 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E30360E2C3083E100801E59 /* UpdateDetail.swift */; };
+		6E3036112C30950C00801E59 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3036102C30950C00801E59 /* UpdateStore.swift */; };
+		6E3036132C309FA800801E59 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3036122C309FA800801E59 /* TabBar.swift */; };
+		6E3036182C30C50900801E59 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3036172C30C50900801E59 /* RingView.swift */; };
 		6E5ADE132C2F862700D10200 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5ADE122C2F862700D10200 /* HomeView.swift */; };
 		6E7283942C2EF27E00FE450C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7283932C2EF27E00FE450C /* MenuView.swift */; };
 		6EEE46162C2F5D1E00C34120 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE46152C2F5D1E00C34120 /* Home.swift */; };
@@ -38,6 +42,11 @@
 
 /* Begin PBXFileReference section */
 		6E30360C2C307CEE00801E59 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
+		6E30360E2C3083E100801E59 /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
+		6E3036102C30950C00801E59 /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
+		6E3036122C309FA800801E59 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		6E3036142C30A3E400801E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6E3036172C30C50900801E59 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		6E5ADE122C2F862700D10200 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6E7283932C2EF27E00FE450C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		6EEE46152C2F5D1E00C34120 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -109,12 +118,17 @@
 		6EEFA4232C2DBD7B00FF188C /* InteractiveX */ = {
 			isa = PBXGroup;
 			children = (
+				6E3036142C30A3E400801E59 /* Info.plist */,
 				6EEFA4242C2DBD7B00FF188C /* InteractiveXApp.swift */,
 				6EEFA4262C2DBD7B00FF188C /* ContentView.swift */,
+				6E3036172C30C50900801E59 /* RingView.swift */,
 				6E7283932C2EF27E00FE450C /* MenuView.swift */,
 				6EEE46152C2F5D1E00C34120 /* Home.swift */,
 				6E30360C2C307CEE00801E59 /* UpdateList.swift */,
+				6E30360E2C3083E100801E59 /* UpdateDetail.swift */,
+				6E3036102C30950C00801E59 /* UpdateStore.swift */,
 				6E5ADE122C2F862700D10200 /* HomeView.swift */,
+				6E3036122C309FA800801E59 /* TabBar.swift */,
 				6EEFA4282C2DBD7C00FF188C /* Assets.xcassets */,
 				6EEFA42A2C2DBD7C00FF188C /* InteractiveX.entitlements */,
 			);
@@ -267,9 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3036182C30C50900801E59 /* RingView.swift in Sources */,
+				6E3036132C309FA800801E59 /* TabBar.swift in Sources */,
+				6E30360F2C3083E100801E59 /* UpdateDetail.swift in Sources */,
 				6EEFA4272C2DBD7B00FF188C /* ContentView.swift in Sources */,
 				6E7283942C2EF27E00FE450C /* MenuView.swift in Sources */,
 				6E30360D2C307CEE00801E59 /* UpdateList.swift in Sources */,
+				6E3036112C30950C00801E59 /* UpdateStore.swift in Sources */,
 				6EEE46162C2F5D1E00C34120 /* Home.swift in Sources */,
 				6E5ADE132C2F862700D10200 /* HomeView.swift in Sources */,
 				6EEFA4252C2DBD7B00FF188C /* InteractiveXApp.swift in Sources */,
@@ -436,6 +454,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InteractiveX/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -474,6 +493,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InteractiveX/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
