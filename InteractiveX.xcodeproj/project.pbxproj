@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E30360D2C307CEE00801E59 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E30360C2C307CEE00801E59 /* UpdateList.swift */; };
 		6E5ADE132C2F862700D10200 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5ADE122C2F862700D10200 /* HomeView.swift */; };
 		6E7283942C2EF27E00FE450C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7283932C2EF27E00FE450C /* MenuView.swift */; };
 		6EEE46162C2F5D1E00C34120 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE46152C2F5D1E00C34120 /* Home.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E30360C2C307CEE00801E59 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		6E5ADE122C2F862700D10200 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6E7283932C2EF27E00FE450C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		6EEE46152C2F5D1E00C34120 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				6EEFA4262C2DBD7B00FF188C /* ContentView.swift */,
 				6E7283932C2EF27E00FE450C /* MenuView.swift */,
 				6EEE46152C2F5D1E00C34120 /* Home.swift */,
+				6E30360C2C307CEE00801E59 /* UpdateList.swift */,
 				6E5ADE122C2F862700D10200 /* HomeView.swift */,
 				6EEFA4282C2DBD7C00FF188C /* Assets.xcassets */,
 				6EEFA42A2C2DBD7C00FF188C /* InteractiveX.entitlements */,
@@ -266,6 +269,7 @@
 			files = (
 				6EEFA4272C2DBD7B00FF188C /* ContentView.swift in Sources */,
 				6E7283942C2EF27E00FE450C /* MenuView.swift in Sources */,
+				6E30360D2C307CEE00801E59 /* UpdateList.swift in Sources */,
 				6EEE46162C2F5D1E00C34120 /* Home.swift in Sources */,
 				6E5ADE132C2F862700D10200 /* HomeView.swift in Sources */,
 				6EEFA4252C2DBD7B00FF188C /* InteractiveXApp.swift in Sources */,
