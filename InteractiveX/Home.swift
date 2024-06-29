@@ -20,28 +20,7 @@ struct Home: View {
             
             
             
-            VStack {
-                
-                HStack {
-                    Text("Watching")
-                        .font(.system(size: 28, weight: .bold))
-                    
-                    Spacer()
-                    
-                    Button(action: {self.showProfile.toggle()}) {
-                        Image("Avatar")
-                            .renderingMode(.original)
-                            .resizable()
-                            .frame(width: 36, height: 36)
-                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                        
-                    }
-                }
-                .padding(.horizontal)
-                .padding(.top, 30)
-                
-                Spacer()
-            }
+            HomeView(showProfile: $showProfile)
             .padding(.top, 44)
             
             .background(Color.white)
@@ -62,7 +41,7 @@ struct Home: View {
             MenuView()
             
                 .background(Color.black.opacity(0.0001))
-                .offset(y: showProfile ? 0 : 1000)
+                .offset(y: showProfile ? 0 : screen.height)
                 .offset(y: viewState.height)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                 .onTapGesture {
@@ -91,3 +70,21 @@ struct Home: View {
 #Preview {
     Home()
 }
+
+struct AvatarView: View {
+    @Binding var showProfile: Bool
+  
+    var body: some View {
+
+        Button(action: {self.showProfile.toggle()}) {
+            Image("Avatar")
+                .renderingMode(.original)
+                .resizable()
+                .frame(width: 36, height: 36)
+                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+            
+        }
+    }
+}
+
+let screen = UIScreen.main.bounds
